@@ -1,4 +1,5 @@
 # OpenHerb MQTT Broker
+[![deploy](https://github.com/OpenHerb/rabbitmq/actions/workflows/deploy.yaml/badge.svg)](https://github.com/OpenHerb/rabbitmq/actions/workflows/deploy.yaml)
 
 ![img](docs/img/icon.png)
 
@@ -19,7 +20,7 @@ services:
   rmq:
     container_name: rmq
     image: ghcr.io/openherb/rabbitmq:arm64
-	restart: always
+    restart: always
     ports:
       # expose for rmq management client
       - "15672:15672"
